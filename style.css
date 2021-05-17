@@ -31,12 +31,27 @@ nav{
 	filter: grayscale(0%);
 }
 
+.navimages a::before{
+	content: "";
+	z-index: -1;
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	border: 10px solid transparent;
+	border-right-color: #040404;
+	margin-left: 2%;
+	transition: all 0.7s;
+	left: 20;
+	transform: translateY(145%) translateX(-20px);
+}
+
 .navimages a::after{
 	content: attr(data-title);
-	position: fixed;
+	position: absolute;
 	opacity: 0;
-	z-index: 2;
-	transition: all 1s;
+	z-index: -1;
+	transition: all 0.7s;
 	font-family: 'Fira Sans', sans-serif;
 	background-color: #040404;
 	border-radius: 5px;
@@ -44,10 +59,20 @@ nav{
 	padding-left: 20px;
 	padding-right: 20px;
 	box-shadow: 0px 3px 3px #464646;
+	left: 20;
+	transform: translateY(50%);
+}
+
+.navimages a:hover::before{
+	opacity: 1;
+	transform: translateY(145%) translateX(108px);
+	/*left: 128px;*/
 }
 
 .navimages a:hover::after{
 	opacity: 1;
+	transform: translateY(50%) translateX(130px);
+	/*left: 150px;*/
 }
 
 header{
@@ -61,6 +86,53 @@ header{
 	text-shadow: 2px 2px 2px #b5b5b5;
 }
 
+header > a{
+	position: absolute;
+	top: 1%;
+	right: 1%;
+	color: black;
+	font-family: 'Dancing Script', cursive;
+	font-size: 0.3em;
+}
+
+header svg{
+	position: absolute;
+	width: 100%;
+	top: 1%;
+	right: 1%;
+}
+
+#line1{
+	fill: rgba(0, 0, 0, 0);
+	transform: translateX(100%);
+}
+#line2{
+	fill: rgba(0, 0, 0, 0);
+	transform: translateX(500%);
+}
+#line3{
+	fill: rgba(0, 0, 0, 0);
+	transform: translateX(1000%);
+}
+
+a:hover #line1{
+	fill: #000;
+	transform: translateY(0%);
+}
+
+a:hover #line2{
+	fill: #ff7302;
+	transform: translateY(0%);
+}
+
+a:hover #line3{
+	fill: #000;
+	transform: translateY(0%);
+}
+
+#line1, #line2, #line3{
+	transition: 1.5s all ease;
+}
 
 article{
 	margin: 2%;
@@ -144,6 +216,25 @@ footer{
 	font-family: 'Rajdhani', sans-serif;
 	font-size: 1.1vw;
 }
+
+footer i{
+	padding: 5px;
+	padding-top: 8px;
+	transition: all 0.5s ease-out;
+	color: #000;
+	font-size: 1.3em;
+}
+
+.tg:hover, .in:hover, .fb:hover, .rd:hover{
+	transform: scale(1.4);
+	text-shadow: 0px 2px 2px rgba(var(--color), 0.7);
+	color: rgba(var(--color), 1);
+}
+
+.tg{--color: 0, 136, 204;}
+.in{--color: 221, 42, 123;}
+.fb{--color: 59, 89, 152;}
+.rd{--color: 255, 67, 1;}
 
 p{
 	font-family: 'Roboto Mono', monospace;
