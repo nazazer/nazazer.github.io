@@ -273,11 +273,15 @@ a:visited{
 		z-index: 1;
 	}
 	
+	.navimages a:hover::before, .navimages a:hover::after{
+		opacity: 0;
+	}
+	
 	.navimages{
 		flex-direction: row;
 	}
 	
-	.navimages img{
+	.navimages img, .navimages svg{
 		width: 43px;
 		height: 43px;
 		transition: none;
@@ -328,4 +332,4 @@ a:visited{
 	}
 }
 
-				/*<a href = "archieve.html" data-title = "Погода"> <img src = "images/icon3.3.png"></a>*/
+/*<a href = "archieve.html" data-title = "Погода"> <img src = "images/icon3.3.png"></a>*/

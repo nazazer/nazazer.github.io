@@ -56,6 +56,12 @@
 
 @keyframes fall{
 	from{opacity: 1; transform: translateY(0%);}
-	50%{transform: translateY(50%);}
+	90%{opacity: 1;}
 	to{opacity: 0;transform: translateY(100%);}
+}
+
+@media screen and (max-width: 600px), (max-device-width: 900px){
+	.navimages svg:hover #wat1, .navimages svg:hover #wat2, .navimages svg:hover #wat3, .navimages svg:hover #wat4, .navimages svg:hover #wat5, .navimages svg:hover #wat6, .navimages svg:hover #wat7, .navimages svg:hover #wat8{
+		animation: none;
+	}
 }
