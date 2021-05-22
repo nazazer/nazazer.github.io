@@ -64,4 +64,11 @@
 	.navimages svg:hover #wat1, .navimages svg:hover #wat2, .navimages svg:hover #wat3, .navimages svg:hover #wat4, .navimages svg:hover #wat5, .navimages svg:hover #wat6, .navimages svg:hover #wat7, .navimages svg:hover #wat8{
 		animation: none;
 	}
+	
+	.navimages svg{
+		width: 43px;
+		height: 43px;
+		transition: none;
+		filter: grayscale(0);
+	}
 }
