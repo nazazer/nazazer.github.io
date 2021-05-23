@@ -251,7 +251,7 @@ h1::after{
 	content: '';
     position: absolute;
     width: 100%;
-    border-top: 3px solid #797979;   
+    border-top: 3px solid #797979;  
     margin-top: .8em;
     margin-left: .4em;
 }
@@ -354,6 +354,14 @@ a:visited{
 }
 
 @media screen and (max-width: 600px), (max-device-width: 900px){
+	header{
+		margin-top: 4%;
+	}
+	
+	header > a{
+		font-size: .35em;
+	}
+	
 	nav{
 		bottom: 0px;
 		height: 30px;
@@ -392,6 +400,18 @@ a:visited{
 	footer{
 		margin-bottom: 50px;
 	}
+	
+	h1{
+		border-bottom: 3px solid #797979;  
+	}
+	
+	h1::after{
+		border: none;
+	}
+	
+	a:hover #line1, a:hover #line2, a:hover #line3{
+		fill: rgba(0, 0, 0, 0);
+	}
 }
 
 @media screen and (max-width: 1000px){
@@ -421,7 +441,7 @@ a:visited{
 	}
 	
 	.columns .rateblock .mmm{
-		overflow: scroll;
+		overflow-x: scroll;
 	}
 }
 

@@ -19,7 +19,7 @@
 }
 
 .infoblock{
-	background-color: #BCBCBC;
+	background-color: #EBEBEB;
 	margin: 3%;
 	max-width: 1000px;
 	padding: 2%;
@@ -76,6 +76,10 @@ h3{
 	
 	.maininf{
 		flex-direction: column;
+	}
+	
+	.cont img{
+		width: 100%;
 	}
 }
 
