@@ -13,6 +13,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Varela+Round&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> 
 		<link rel="shortcut icon" type="image/png" href="images/icon1.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<style>
 			span{
 				margin-top: 2%;
@@ -125,7 +126,7 @@
 			</div>
 		</nav>
 		<main>
-			<header>
+			<header id = "aim">
 				Orange News
 				<a href = "about.html"> Powered by Analoginform 
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 50" style="enable-background:new 0 0 150 50;" xml:space="preserve">
@@ -195,6 +196,8 @@
 				</div>
 			</div>
 			
+			<a href = "#aim"><img src = "images/SVG/arrow2.svg" id = "arrow"></a>
+			
 			<footer>
 				&copy;&nbsp;2020-2025 "OrangeNews"<br>
 				<a href = "https://t.me/Nazazer"><i class="fab fa-telegram-plane tg"></i></a>
@@ -203,5 +206,18 @@
 				<a href = "https://www.reddit.com/u/nazazer?utm_medium=android_app&utm_source=share" class = "rd"><i class="fab fa-reddit-alien rd"></i></a>
 			</footer>
 		</main>
+		<script>
+		jQuery(document).ready(function() {
+		  var btn = $('#arrow');  
+		  btn.addClass('hidden');
+		  $(window).scroll(function() {     
+			if ($(window).scrollTop() > 200) {
+			   btn.removeClass('hidden').addClass('show');
+			 } else {
+			   btn.removeClass('show').addClass('hidden');
+			 }
+		   });
+		});
+		</script>
 	</body>
 </html>
