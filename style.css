@@ -277,10 +277,54 @@ h1::after{
 	margin: 1%;
 }
 
+#tableov{
+	overflow-x: scroll;
+}
+
+table{
+	border-collapse: collapse;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+table tr{
+	height: 50px;
+}
+
 table td{
-	align-text: center;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 500;
+	border-bottom: 2px solid #797979;
+	border-left: 2px solid #797979;
+	border-right: 2px solid #797979;
+	text-align: center;
+	padding: 10px;
+}
+
+table td:first-child, table th:first-child{
+	border-left: none;
+}
+
+table td:last-child, table th:last-child{
+	border-right: none;
+}
+
+table tr:last-child td{
+	border-bottom: none;
+}
+
+table tr td:first-child{
+	text-align: left;
+}
+
+table th {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	border-bottom: 2px solid #797979;
+	border-left: 2px solid #797979;
+	border-right: 2px solid #797979;
+	text-align: center;
+	padding: 10px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
