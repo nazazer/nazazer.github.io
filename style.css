@@ -434,6 +434,18 @@ a:visited{
 }
 
 @media screen and (max-width: 600px), (max-device-width: 900px){
+	article h3{
+		font-size: 1.1em;
+	}
+	
+	article p{
+		font-size: 1.5em;
+	}
+	
+	.infoblock h3{
+		font-size: 0.9em;
+	}
+	
 	header{
 		margin-top: 4%;
 	}
@@ -504,6 +516,15 @@ a:visited{
 	
 	.text_part{
 		font-size: 0.9em;
+	}
+	
+	.he_block{
+		font-size: 1.8em;
+	}
+	
+	.he_wrapper{
+		width: 99%;
+		padding: 0.5%;
 	}
 }
 
