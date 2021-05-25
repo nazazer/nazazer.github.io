@@ -1,0 +1,49 @@
+span{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+main .columns{
+	column-width: 750px;
+	column-gap: 20px;
+	column-fill: balance-all;
+	padding-top: 3%;
+}
+			
+.rateblock{
+	border: 3px solid #000000;
+	box-shadow: 0px 5px 10px #b5b5b5;
+	padding: 1%;
+	min-width: 150px;
+	margin-bottom: 3%;
+}
+
+.rateblock img{
+	min-width: 500px;
+}
+
+.headtext{
+	border: 3px solid #000000;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+	font-size: 300%;
+	margin-top: 3%;
+	margin-bottom: 0;
+	padding: 1%;
+	box-shadow: 0px 5px 10px #b5b5b5;
+}
+
+.columns i{
+	font-size: 2em;
+	margin: 30px;
+}
+hr{
+	height: 2px;
+	border-radius: 5px;
+	background-color: black;
+	margin-bottom: 30px;
+}
+
+#main_column{
+	padding: 0.5%;
+}
